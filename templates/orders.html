@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SellBot AI - Orders</title>
+</head>
+<body>
+<h2>Orders</h2>
+<table border="1">
+<tr>
+<th>Time</th><th>Name</th><th>Phone</th>
+<th>Items</th><th>Total</th><th>Address</th>
+</tr>
+{% for o in orders %}
+<tr>
+<td>{{o.time}}</td>
+<td>{{o.name}}</td>
+<td>{{o.phone}}</td>
+<td>{{o.items}}</td>
+<td>{{o.total}}</td>
+<td>{{o.address}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
+ 
